@@ -1,0 +1,5 @@
+class Friend < ActiveRecord::Base
+ attr_accessible :area, :contact_interval, :last_contact, :last_meeting, :location_0, :location_1, :location_2, :meeting_interval, :name, :next_meeting
+  validates :name,  :presence => true
+
+end

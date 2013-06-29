@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @friend.name %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @friend.area %>
+</p>
+
+<p>
+  <b>Last contact:</b>
+  <%= @friend.last_contact %>
+</p>
+
+<p>
+  <b>Last meeting:</b>
+  <%= @friend.last_meeting %>
+</p>
+
+<p>
+  <b>Location 0:</b>
+  <%= @friend.location_0 %>
+</p>
+
+<p>
+  <b>Location 1:</b>
+  <%= @friend.location_1 %>
+</p>
+
+<p>
+  <b>Location 2:</b>
+  <%= @friend.location_2 %>
+</p>
+
+<p>
+  <b>Next meeting:</b>
+  <%= @friend.next_meeting %>
+</p>
+
+<p>
+  <b>Contact interval:</b>
+  <%= @friend.contact_interval %>
+</p>
+
+<p>
+  <b>Meeting interval:</b>
+  <%= @friend.meeting_interval %>
+</p>
+
+
+<%= link_to 'Edit', edit_friend_path(@friend) %> |
+<%= link_to 'Back', friends_path %>

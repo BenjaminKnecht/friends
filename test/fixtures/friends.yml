@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  area: MyString
+  last_contact: 2012-09-25
+  last_meeting: 2012-09-25
+  location_0: MyString
+  location_1: MyString
+  location_2: MyString
+  next_meeting: 2012-09-25
+  contact_interval: 1
+  meeting_interval: 1
+
+two:
+  name: MyString
+  area: MyString
+  last_contact: 2012-09-25
+  last_meeting: 2012-09-25
+  location_0: MyString
+  location_1: MyString
+  location_2: MyString
+  next_meeting: 2012-09-25
+  contact_interval: 1
+  meeting_interval: 1

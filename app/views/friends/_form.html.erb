@@ -1,0 +1,57 @@
+<%= form_for(@friend) do |f| %>
+  <% if @friend.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@friend.errors.count, "error") %> prohibited this friend from being saved:</h2>
+
+      <ul>
+      <% @friend.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br />
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :last_contact %><br />
+    <%= f.date_select :last_contact %>
+  </div>
+  <div class="field">
+    <%= f.label :last_meeting %><br />
+    <%= f.date_select :last_meeting %>
+  </div>
+  <div class="field">
+    <%= f.label :location_0 %><br />
+    <%= f.text_field :location_0 %>
+  </div>
+  <div class="field">
+    <%= f.label :location_1 %><br />
+    <%= f.text_field :location_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :location_2 %><br />
+    <%= f.text_field :location_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :next_meeting %><br />
+    <%= f.date_select :next_meeting %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_interval %><br />
+    <%= f.number_field :contact_interval %>
+  </div>
+  <div class="field">
+    <%= f.label :meeting_interval %><br />
+    <%= f.number_field :meeting_interval %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
